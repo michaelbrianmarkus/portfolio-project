@@ -1,4 +1,6 @@
 body{
+max-width: 100%;
+overflow-x: hidden;
 margin: 0px;
 background-color: #474652;
 }
@@ -169,24 +171,37 @@ font-style: italic;
 
 .mainpageimage img {
     margin-right: 15vw;
+    width: 30vw;
+    height: auto;
 }
 
 .pinkslope{
-    background-image: url("Vector\ 1.png");
+    background-image: url("slopes/pinkslope.png");
     margin-top: 5vh;
     width: 100vw;
     height: 100px;
- 
+
 }
 
+.yellowslope{
+    background-image: url("slopes/yellowslope.png");
+    margin-top: 5vh;
+    width: 100vw;
+    height: 100px;
+}
 .pbg{
     margin-top: .0051vh;
-    height: 500vh;
+    height: 100vh;
     background-color: #D82D62;
 }
 
+.ybg{
+    margin-top: .0051vh;
+    height: 500vh;
+    background-color: #D0CA8E;
+}
 .hello-title{
-    margin-left: 15vw;
+    margin-left: 10vw;
     font-size: 5vw;
     color:black;
     font-weight: 650;
@@ -199,7 +214,7 @@ font-style: italic;
 
 }
 .hello-text{
-    margin-left: 15vw;
+    margin-left: 10vw;
     font-size: 2vw;
     width: 35vw;
     color:black;
@@ -214,6 +229,6 @@ font-style: italic;
 
 .helloimage img{
     margin-top: 10vh;
-    margin-right: 15vw;
+    margin-right: 10vw;
 
 }
