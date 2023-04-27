@@ -198,10 +198,12 @@ font-style: italic;
 }
 
 .pinkslope{
+    
     background-image: url("slopes/pinkslope.png");
     margin-top: 5vh;
     width: 100vw;
     height: 100px;
+    z-index: 9999999999999999999;;
 
 }
 
@@ -212,6 +214,10 @@ font-style: italic;
     height: 100px;
 }
 .pbg{
+    z-index: -999999999;
+    -webkit-box-shadow:0px 0px 105px  rgba(204,4,151,0.9);
+    -moz-box-shadow: 0px 0px 105px  rgba(204,4,151,0.9);
+    box-shadow: 0px 0px 105px 45px rgba(204,4,151,0.9);
     margin-top: .0051vh;
     height: 100vh;
     background-color: #D82D62;
@@ -282,7 +288,7 @@ font-style: italic;
 .popup {
     position: fixed;
     display: none;
-    height: 20vh;
+    height: 50vh;
     position: absolute;
     z-index: 9999;
     background-color: #474652;
@@ -296,11 +302,16 @@ font-style: italic;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: lightgray;
+    background-color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
   
+  .date{
+    font-size: 3rem;
+
+    color:white
+  }
   .popup-title {
     font-size: 1.2em;
   }
@@ -315,6 +326,8 @@ font-style: italic;
   }
   
   .popup-content {
+    font-size: 2rem;
+    text-align: center;
     padding: 10px;
   }
   
