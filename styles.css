@@ -65,7 +65,7 @@ color: #DDD055
 .nametitle::before,
 .psubl::before
 {
-    padding: 0px;
+
   content: "\003C";
   color: gainsboro;
   font-weight: 100;
@@ -84,6 +84,19 @@ color: #DDD055
   font-weight: 100;
 
 }
+
+.about-title::before{
+    content: "\003C";
+    color: black;
+    font-weight: 100;
+}
+
+.about-title:after{
+    content: "\003E";
+    color: black;
+    font-weight: 100;
+}
+
 
 .hello-title::before{
     content: "\003C";
@@ -224,8 +237,11 @@ font-style: italic;
 }
 
 .ybg{
-    height: 500vh;
+    height: 100vh;
     background-color: #D0CA8E;
+    -webkit-box-shadow:0px 0px 105px 45px rgba(184,194,43,0.9);
+-moz-box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
+box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
 }
 .hello-title{
     margin-left: 10vw;
@@ -334,3 +350,23 @@ font-style: italic;
   .popup.draggable {
     cursor: move;
   }
+
+.aboutmewrap{
+    position: relative;
+    bottom: -2.5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutmeimage img{
+    margin-left: 10vw;
+    width: 40vw;
+    height: auto;
+}
+
+.about-title{
+    position: relative;
+    left: 12.5vw;
+    font-weight: 500;
+    font-size: 5vw;
+}
