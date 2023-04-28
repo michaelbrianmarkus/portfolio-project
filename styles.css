@@ -168,7 +168,9 @@ nav  ul ul a {
 
 .threewords{
     font-size: 4vw;
-    margin-top: 10vh;
+    margin-top: 15vh;
+    margin-bottom: 15vh
+    ;
 }
 
 .wordone{
@@ -205,9 +207,22 @@ font-style: italic;
 }
 
 .mainpageimage img {
+    margin-top: 10vh;
     margin-right: 15vw;
     width: 30vw;
     height: auto;
+    border-radius: 3vw;
+    animation: imageglow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes imageglow{
+    0% {    box-shadow: 0 0 100px 5px #DDD055;;}
+    25% {    box-shadow: 0 0 100px 5px  #AE063A;}
+    50% {    box-shadow: 0 0 100px 5px  #17B371;}
+    100% {    box-shadow: 0 0 100px 5px #DDD055;;}
+
 }
 
 .pinkslope{
@@ -369,4 +384,46 @@ box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
     left: 12.5vw;
     font-weight: 500;
     font-size: 5vw;
+}
+
+.about-text{
+    margin-left: 10vw;
+    font-size: 2vw;
+    width: 35vw;
+    color:black;
+    font-weight: 650;
+}
+
+.takemebutton{
+    color:white;
+    width: 25vw;
+    height: 2.5vw;
+    margin-left: 7.5vw;
+    border-radius: 2vw;
+}
+
+.takemebutton button{
+    color:black;
+    font-size: 2vw;
+}
+
+.aboutmecolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grayslope{
+    background-image: url("slopes/grayslope.png");
+    margin-top: 5vh;
+    width: 100vw;
+    height: 100px;
+
+}
+
+.gbg{
+    height: 100vh;
+    -webkit-box-shadow:0px 0px 105px 45px rgba(70,79,71,0.9);
+-moz-box-shadow: 0px 0px 105px 45px rgba(70,79,71,0.9);
+box-shadow: 0px 0px 105px 45px rgba(70,79,71,0.9);
 }
