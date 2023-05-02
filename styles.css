@@ -252,6 +252,8 @@ font-style: italic;
 }
 
 .ybg{
+    z-index: -999999999;
+
     height: 100vh;
     background-color: #D0CA8E;
     -webkit-box-shadow:0px 0px 105px 45px rgba(184,194,43,0.9);
@@ -418,10 +420,13 @@ box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
     margin-top: 5vh;
     width: 100vw;
     height: 100px;
+    z-index: 9999999999999999999;;
 
 }
 
 .gbg{
+    z-index: -999999999;
+
     height: 100vh;
     -webkit-box-shadow:0px 0px 105px 45px rgba(70,79,71,0.9);
 -moz-box-shadow: 0px 0px 105px 45px rgba(70,79,71,0.9);
