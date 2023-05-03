@@ -233,6 +233,7 @@ font-style: italic;
     height: 100px;
     z-index: 9999999999999999999;;
 
+
 }
 
 .yellowslope{
@@ -246,9 +247,10 @@ font-style: italic;
     -webkit-box-shadow:0px 0px 105px  rgba(204,4,151,0.9);
     -moz-box-shadow: 0px 0px 105px  rgba(204,4,151,0.9);
     box-shadow: 0px 0px 105px 45px rgba(204,4,151,0.9);
+    
     margin-top: .0051vh;
     height: 100vh;
-    background-color: #D82D62;
+    background-color: #D82D62
 }
 
 .ybg{
@@ -256,6 +258,8 @@ font-style: italic;
 
     height: 100vh;
     background-color: #D0CA8E;
+
+    
     -webkit-box-shadow:0px 0px 105px 45px rgba(184,194,43,0.9);
 -moz-box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
 box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
@@ -316,6 +320,9 @@ box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
     color:white
 }
 
+.age:hover{
+    cursor: pointer;
+}
 
 
 .popup {
@@ -397,16 +404,18 @@ box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
 }
 
 .takemebutton{
-    color:white;
+    background-color: #3F3E46;
     width: 25vw;
-    height: 2.5vw;
+    height: 5vw;
     margin-left: 7.5vw;
     border-radius: 2vw;
 }
 
 .takemebutton button{
-    color:black;
+    color:white;
     font-size: 2vw;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 .aboutmecolumn{
@@ -417,22 +426,55 @@ box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
 
 .grayslope{
     background-image: url("slopes/grayslope.png");
-    margin-top: 5vh;
     width: 100vw;
     height: 100px;
     z-index: 9999999999999999999;;
+    margin-top: 5vw;
 
 }
 
 .gbg{
-    z-index: -999999999;
+z-index: 99999999999999999;
+    height: 150vh;
+    background-color: #474652;
+  
 
-    height: 100vh;
-    -webkit-box-shadow:0px 0px 105px 45px rgba(70,79,71,0.9);
--moz-box-shadow: 0px 0px 105px 45px rgba(70,79,71,0.9);
-box-shadow: 0px 0px 105px 45px rgba(70,79,71,0.9);
 }
 
-.footer{
-    margin-bottom: 0px;
-}
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .social-media button {
+    border-radius: 1vw;
+    height: 17.5vw;
+    width: 17.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#3F3E46;
+    border: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: .2s;
+    position: relative;
+    top: 30vh;
+    box-shadow: none;
+  }
+
+  .boxq:hover{
+background-color: white;
+cursor: pointer;
+transform: scale(1.1);
+
+  }
+  
+  .social-media button img {
+    width: 30px;
+    height: 30px;
+    }
+
+
