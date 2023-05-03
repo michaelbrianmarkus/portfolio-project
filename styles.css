@@ -11,7 +11,6 @@ background-color: #474652;
     font-family: 'Inter', sans-serif;
     list-style: none;
     text-decoration: none;
-
 }
 
 
@@ -85,7 +84,8 @@ color: #DDD055
 
 }
 
-.about-title::before{
+.about-title::before,
+.contactme::before{
     content: "\003C";
     color: black;
     font-weight: 100;
@@ -164,7 +164,9 @@ nav  ul ul a {
     animation-timing-function: ease-in-out;
     margin-left: 30px;
     margin-top: 5px;
+
 }
+
 
 .threewords{
     font-size: 4vw;
@@ -249,14 +251,14 @@ font-style: italic;
     box-shadow: 0px 0px 105px 45px rgba(204,4,151,0.9);
     
     margin-top: .0051vh;
-    height: 100vh;
+    height: 150vh;
     background-color: #D82D62
 }
 
 .ybg{
     z-index: -999999999;
 
-    height: 100vh;
+    height: 200vh;
     background-color: #D0CA8E;
 
     
@@ -322,6 +324,11 @@ box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
 
 .age:hover{
     cursor: pointer;
+}
+
+
+.rotatingimage img{
+    width: 10vw
 }
 
 
@@ -409,13 +416,17 @@ box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
     height: 5vw;
     margin-left: 7.5vw;
     border-radius: 2vw;
+    display: flex;
 }
 
-.takemebutton button{
+.takemebutton p{
+    align-self: center;
     color:white;
+    text-align: center;
     font-size: 2vw;
     cursor: pointer;
     font-weight: 600;
+
 }
 
 .aboutmecolumn{
@@ -429,11 +440,14 @@ box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
     width: 100vw;
     height: 100px;
     z-index: 9999999999999999999;;
-    margin-top: 5vw;
+    margin-top: 15vw;
 
 }
 
 .gbg{
+    -webkit-box-shadow:0px 0px 105px 45px rgba(99,110,107,0.9);
+-moz-box-shadow: 0px 0px 105px 45px rgba(99,110,107,0.9);
+box-shadow: 0px 0px 105px 45px rgba(99,110,107,0.9);
 z-index: 99999999999999999;
     height: 150vh;
     background-color: #474652;
@@ -455,13 +469,13 @@ z-index: 99999999999999999;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#3F3E46;
+    background-color:#ecf87b7c;
     border: none;
     padding: 10px;
     margin: 0 10px;
     transition: .2s;
     position: relative;
-    top: 30vh;
+
     box-shadow: none;
   }
 
@@ -473,8 +487,87 @@ transform: scale(1.1);
   }
   
   .social-media button img {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
+    }
+
+    .resumeview{
+        margin-top: 5vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        display: flex;
+        justify-content: space-between;
     }
 
 
+    .resumeimage img{
+        width: 30vw;
+        height: auto;
+        filter: blur(4px);
+        -webkit-filter: blur(2px);
+    }
+
+    .viewqualifications{
+        font-size: 3vw;
+        color: black;
+        font-weight: 600;
+        position: relative;
+        top: 12.5vw;
+    }
+
+
+    .footer{
+        margin-top: none;
+        background-color: #474652;
+        height: 12.5vw;
+    }
+
+    .socialslist img{
+        width: 40px;
+        height: 40px;
+        margin-top: 2.5vw;
+        
+    }
+
+    .socialslist{
+        display: flex;
+        justify-content: space-between;
+        width: 10vw;
+        margin-left: 45vw;
+        margin-right: 45vw;
+        margin-bottom: 2.5vw;
+    
+    }
+    .footerlist{
+        color:white;
+        margin-left: none;
+        font-size: 1.5rem;
+        font-weight: 100;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+        width: 50%;
+        text-align: center;
+        margin-left: 22.5vw;
+
+    }
+
+    .michaelcopyright{
+        color:white;
+        font-weight: 100;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-left: 1vw;
+    }
+        
+    .columnqq{
+        display: flex;  
+        flex-direction: column;
+    }
+
+    .graywave img{
+        margin-bottom: none;
+        width: 100vw;
+        height: 50%;
+    }
