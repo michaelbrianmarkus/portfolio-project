@@ -9,3 +9,7 @@ function drag(e) {
 function dragEnd(e) {
   popup.classList.remove("draggable");
 }
+function changeScreen() {
+  var tvScreen = document.getElementById("tvscreen");
+  tvScreen.style.backgroundImage = "url('images/cart 1.png')";
+}
