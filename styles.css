@@ -51,8 +51,10 @@ body .footer{
     height: 30vh;
 }
 
-html .socialslist{
-    font-size: .1em;
+body .footer .footerlist{
+    font-size: 2vw;
+;
+
 }
 }
 
