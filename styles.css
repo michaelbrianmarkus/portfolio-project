@@ -56,6 +56,8 @@ body .footer .footerlist{
 ;
 
 }
+
+
 }
 
 
@@ -320,7 +322,7 @@ font-style: italic;
 .ybg{
     z-index: -999999999;
 
-    height: 200vh;
+    height: 120vh;
     background-color: #D0CA8E;
 
     
@@ -446,7 +448,7 @@ box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
 
 .aboutmewrap{
     position: relative;
-    bottom: -2.5vw;
+    bottom: -7.5vw;
     display: flex;
     flex-direction: row;
 }
@@ -476,7 +478,7 @@ box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
     background-color: #3F3E46;
     width: 25vw;
     height: 5vw;
-    margin-left: 7.5vw;
+    margin-left: 13vw;
     border-radius: 2vw;
     display: flex;
 }
@@ -488,6 +490,8 @@ box-shadow: 0px 0px 105px 45px rgba(184,194,43,0.9);
     font-size: 2vw;
     cursor: pointer;
     font-weight: 600;
+    width: 100%;
+    
 
 }
 
@@ -522,6 +526,7 @@ z-index: 99999999999999999;
     justify-content: center;
     align-items: center;
     padding: 20px;
+
   }
   
   .social-media button {
@@ -582,13 +587,15 @@ transform: scale(1.1);
         margin-top: none;
         background-color: #474652;
         height: 14vw;
+    
+ 
     }
 
     .socialslist img{
         width: 40px;
         height: 40px;
         margin-top: 2.5vw;
-        z-index: 99999999999;
+        z-index: 999989999999999999999;
     
     }
 
@@ -630,12 +637,3 @@ transform: scale(1.1);
         flex-direction: column;
     }
 
-    .graywave img{
-        margin: 0px;
-        padding: 0px;
-        margin-bottom: none;
-        width: 100vw;
-        height: 50%;
-        position: relative;
-        top: .5vw
-    }
