@@ -1,3 +1,61 @@
+@media only screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+  }
+
+  body .threewords{
+    margin-bottom: 0px;
+    transition: ease 2s;
+    margin-left: 15vw;
+}
+
+body .wordone{
+    margin-left: 0vw;
+
+}
+
+body .wordtwo{
+    margin-left: 0vw;
+
+}
+
+body .wordthree{
+    margin-left: 0vw;
+
+}
+
+body .mainpageimage{
+    position: relative;
+    top: 10vw;
+}
+
+body .mainpageimage img{
+    width: 75%;
+}
+
+body .nametitle{
+}
+
+body .wordimageflex{
+    position: relative;
+    bottom:  5vw;
+}
+
+body .ybg{
+    height: 120vw;
+}
+
+body .footer{
+    height: 30vh;
+}
+
+html .socialslist{
+    font-size: .1em;
+}
+}
+
+
+
 body{
 max-width: 100%;
 overflow-x: hidden;
@@ -171,8 +229,8 @@ nav  ul ul a {
 .threewords{
     font-size: 4vw;
     margin-top: 15vh;
-    margin-bottom: 15vh
-    ;
+    margin-bottom: 15vh;
+    margin-right: 10vw;
 }
 
 .wordone{
@@ -519,17 +577,19 @@ transform: scale(1.1);
     .footer{
         margin-top: none;
         background-color: #474652;
-        height: 12.5vw;
+        height: 14vw;
     }
 
     .socialslist img{
         width: 40px;
         height: 40px;
         margin-top: 2.5vw;
-        
+        z-index: 99999999999;
+    
     }
 
-    .socialslist{
+    .socialslist{        margin-top: 0px;
+
         display: flex;
         justify-content: space-between;
         width: 10vw;
@@ -567,7 +627,11 @@ transform: scale(1.1);
     }
 
     .graywave img{
+        margin: 0px;
+        padding: 0px;
         margin-bottom: none;
         width: 100vw;
         height: 50%;
+        position: relative;
+        top: .5vw
     }
