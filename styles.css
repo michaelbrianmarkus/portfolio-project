@@ -4,6 +4,14 @@
   }
 
 
+  body .tv-container{
+    transform: scale(.6);
+}
+
+body .wrap{
+    display: flex;
+    flex-direction: column;
+}
 
   body .threewords{
     margin-bottom: 0px;
@@ -322,7 +330,7 @@ font-style: italic;
 .ybg{
     z-index: -999999999;
 
-    height: 120vh;
+    height: 500vh;
     background-color: #D0CA8E;
 
     
@@ -671,6 +679,9 @@ transform: scale(1.1);
 }
 
 .tvscreen{
+    -webkit-box-shadow:0px 0px 111px 31px rgba(169,186,181,0.28);
+-moz-box-shadow: 0px 0px 111px 31px rgba(169,186,181,0.28);
+box-shadow: 0px 0px 111px 31px rgba(169,186,181,0.28);
     margin-top: 5px;
 position: absolute;
   top: 20px;
@@ -735,6 +746,15 @@ position: absolute;
 
   .wrap{
     display: flex;
-    margin-left: 20vw;
+    margin-right: 15vw;
+    margin-left: 15vw;
     margin-bottom: 10vw;
-  }
+    position: relative;
+    top: 5vw;
+    justify-content: space-between;
+}
+
+.portfoliotitle{
+    position: relative;
+    top: 5vw;
+}
