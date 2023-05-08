@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     body{
         overflow-x: hidden;
   }
@@ -772,7 +772,7 @@ position: absolute;
 
 .portfoliotitle{
     position: relative;
-    top: 15vw;
+    top: 10vw;
 }
 
 .attenae{
@@ -799,6 +799,8 @@ position: absolute;
 }
 
 .hobbiesflex{
+    position: relative;
+    top: 5vw;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -833,3 +835,78 @@ position: absolute;
     display: flex;
     flex-direction: row;
 }
+
+.slideshow-container {
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+    overflow: hidden;
+  }
+  
+  .slideshow-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slideshow-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+  
+  .slideshow-images img.active {
+    display: block;
+    border-radius: none;
+  }
+  
+  .slideshow-navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .dot {
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    background-color: #bbb;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #fff;
+  }
+
+
+
+  .hobbiesimage{
+    bottom: 10vw;
+    margin-right: 10vw;
+    margin-right: 5vw;
+   position: relative; 
+  }
+  
+  .portfoliocolumn{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programmingimage img{
+    height: 70vh;
+    width: 30vw;
+    border-radius: 1.5vw;
+}
+
+    .writingimage img{
+        height: 70vh;
+        width: 30vw;
+        border-radius: 1.5vw;
+    }
