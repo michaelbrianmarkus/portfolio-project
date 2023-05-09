@@ -1103,4 +1103,7 @@ position: absolute;
         margin-left: 10vw;
     }
 
-    
+    .strikethrough{
+        text-decoration: line-through black 3px
+        ;
+    }
