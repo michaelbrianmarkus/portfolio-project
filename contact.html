@@ -1,5 +1,4 @@
 <!DOCTYPE html> <html lang="en"> <head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>&lt;contact&gt;</title> <link rel = "stylesheet" href = "styles.css"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></head>
-
 <nav>
     <ul class = "navbar-links">
         <div class = "homebutton">
@@ -66,28 +65,40 @@
 
 
 
-<div class = "emailbox" style = "position: relative; top: 30vh;">
+ <form id="contactForm" action="https://formsubmit.co/michael.markus@student.cart.org" method="POST" value = "">
+    <!-- HoneyPot -->
+    <input type="text" name="_honey" style="display: none;">
 
-<div class = "name">
-   <input type = "text" id = "name"  placeholder="name:">
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+    
+
+    <input type="hidden" name="_next" onclick >
+
+    <div style="width: 45%;">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" required="">
+    </div>
+    <div style="width: 45%; margin-left: 10%;"> 
+        <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" required="">
+    </div>
+    <div style="width: 100%;">
+        <label for="contactmethod">Contact Method (Optional)</label>
+    <input type="text" id="contactmethod" name="contactmethod">
+    </div>
+    <div style="width: 100%;">
+        <label for="message">Type Message Here</label>
+        <textarea id="typeMessage" name="message" rows="14" cols="10" wrap="soft" required=""> </textarea>
+    </div>
+
+    <input type="submit" value="Submit">
+</form>
+
+</div>
 </div>
 
-<div class = "youremail ">
-    <input type = "text" id = "name"  placeholder="your email:">
- </div>
- 
-<div class = "message">
-    <input type = "text" id = "name"  placeholder="your message:">
-</div>
-
-<div class = "submitbutton">
-    <p> Send Email </p>
-</div>
-
-</div>
-</div>
-
-<div class = "footer">  
+<div class = "footer" style = "position: relative; top:  50vh;">  
     <div class = "socialslist">
         <a href="https://www.instagram.com/michaelbrianmarkus">
         <img src = "icons/Instagram_logo_2016.svg">
@@ -118,3 +129,86 @@
     </div>
     
     
+
+    <style>
+
+section>div>div{
+            margin-top: 8em;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        section>div>div>a{
+            width: 10%;
+        }
+        section>div>div>a>img{
+            width: 100%;
+            filter: invert(1);
+            
+        }
+        form>div{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        form>div>input{
+            background-color: #474652;
+            color: white;
+            border: none;
+            height: 2em;
+            border-radius: 2em;
+            padding: .5em;
+        }
+        form>div>label{
+            color: white;
+            font-family: 'Jura', sans-serif;
+            margin-top: 1em;
+            margin-left: 1em;
+        }
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            top: 25vh;
+            transform: scale(.75);
+            
+        }
+        #typeMessage{
+            background-color: #474652;
+            border: none;
+            color: white;font-family: 'Jura', sans-serif;
+            font-size: 1em;
+            border-radius: 2em;
+            padding: 1em;
+        }
+
+        form>input{
+            background-color: #474652;
+            color: white;
+            font-family: 'Jura', sans-serif;
+            font-size: 1.2em;
+            width: 20%;
+            height: 2.5em;f
+            border-radius: 2em;
+            margin-top: 2em;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        form>input:hover{
+            background-color: #474652;
+            cursor:pointer;
+        }
+
+        
+        form>input:hover{
+    transform: scale(1.1);
+    transition: ease .2s;
+    background-color: white;
+    color:black
+}
+
+ form>input p:hover{
+    color:black
+}
+    </style>

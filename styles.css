@@ -1047,6 +1047,7 @@ position: absolute;
         top: 5vw;
       }
 
+
       .footerlist a.footerlink {
         background-image: linear-gradient(
           to right,
@@ -1101,3 +1102,5 @@ position: absolute;
     .awat{
         margin-left: 10vw;
     }
+
+    
