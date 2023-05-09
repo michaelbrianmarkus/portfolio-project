@@ -136,7 +136,8 @@ color: #DDD055
 .aboutme::before,
 .resume::before,
 .nametitle::before,
-.psubl::before
+.psubl::before,
+.contact::before
 {
 
   content: "\003C";
@@ -149,7 +150,9 @@ color: #DDD055
 .aboutme::after,
 .resume::after,
 .nametitle::after,
-.psubl::after {  
+.psubl::after,
+.contact::after
+ {  
 
   content: "\003E";
   color: gainsboro;
@@ -828,7 +831,7 @@ position: absolute;
 
 
 .awardscolumn{
-    transform: scale(.66);
+    margin-left: 10vw;
     display: flex;
     flex-direction: column;
 }
@@ -846,6 +849,9 @@ position: absolute;
 .planflex{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 5vw;
 }
 
 .slideshow-container {
@@ -929,18 +935,23 @@ position: absolute;
 }
 
 .planimage{
-    scale: 2;
-    margin-left: 15vw;
+    margin-left: 10vw;
+}
+
+.plantext p{
+    position: relative;
+    right: 15vw;
+    width: 100%;
 }
 
 .resumebg{
     width: fit-content;
     border-radius: .5vw;
-    margin-left: 15vw;
-    transform: scale(1.2);
+    margin-left: 10vw;
+    transform: scale(1.5);
     transition: ease 1s;
     position: relative;
-    top: 10vh;
+    top: 40vh;
 }
 
 .resumetitle h2{
@@ -956,16 +967,15 @@ position: absolute;
 }
 
 .emailbox{
-    padding: 5vw;
+    padding: 2vw;
     background-color:#3F3E46;
-    width: 70vw;
-    height: 70vh;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+    left: 20vw;
 }
 
 .name input{
-    border-radius: 1.5vw;
     width: 100%;
     height: 3vw;
     margin-bottom: 2.5vw;
@@ -974,7 +984,6 @@ position: absolute;
 
 
 .youremail input{
-    border-radius: 1.5vw;
     width: 100%;
     height: 3vw;
     margin-bottom: 2.5vw;
@@ -982,22 +991,45 @@ position: absolute;
 }
 
 .message input{
-    border-radius: 1.5vw;
     width: 100%;
     height: 30vh;
     margin-bottom: 5vw;}
 
 
+.submitbutton{
+    background-color: #3F3E46;
+    width: 25vw;
+    height: 5vw;
+    margin-left: 13vw;
+    border-radius: 2vw;
+    display: flex;
+}
 
-    .fade-in {
-        opacity: 0%;
-        transition: opacity 0.5s ease-in-out;
-      }
-      
-      .fade-in.loaded {
-        opacity: 1;
-      }
+.submitbutton:hover{
+    transform: scale(1.1);
+    transition: ease .2s;
+    background-color: white;
+}
 
+.submitbutton p:hover{
+    color:black
+}
+
+.submitbutton p{
+    height: 100%;
+    align-self: center;
+    color:white;
+    text-align: center;
+    font-size: 2vw;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    position: relative;
+    top: 25%;
+    
+    
+
+}
 
       .animation {
         opacity: 0; /* initially hidden */
@@ -1051,3 +1083,21 @@ position: absolute;
       .footerlist a.footerlink:hover:before {
         width: 100%;
       }
+
+      .certificate img{
+        margin-top: 0px;
+        width: 40vw;
+        height: auto;
+        margin-bottom: 2.5vw;
+      }
+
+      .at{
+        position: relative;
+        top: 25vh;
+        font-size: 2.5vw;
+        white-space: nowrap;
+    }
+
+    .awat{
+        margin-left: 10vw;
+    }
