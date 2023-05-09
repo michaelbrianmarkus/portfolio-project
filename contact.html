@@ -65,8 +65,11 @@
 
 
 
- <form id="contactForm" action="https://formsubmit.co/michael.markus@student.cart.org" method="POST" value = "https://michaelmarkus.netlify.app/contact.html">
+ <form id="contactForm" action="https://formsubmit.co/michael.markus@student.cart.org" method="POST"">
     <!-- HoneyPot -->
+
+    <input type="hidden" name="_next" value = "https://michaelmarkus.netlify.app/contact.html">
+
     <input type="text" name="_honey" style="display: none;">
 
     <!-- Disable Captcha -->
