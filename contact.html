@@ -30,12 +30,12 @@
 </div>
 
 <div class = "pinkslope" style = "margin-bottom: 0vw;"></div>
-<div class = "pbg"  >
-    <div class = "contact-text text" style = "margin-top: 0vw;">
-        <p class = "top" style = "margin-top: 0vw;">
+<div class = "pbg" >
+    <div class = "contact-text text" style = "margin-top: vw;">
+        <p class = "top" style = "margin-top: 0vw;" >
             Thank you for viewing my portfolio.
         </p>
-        <p class = "bottom text" style = "position: relative; right: 10vw;">
+        <p class = "bottom text" style = "position: relative; right: 10vw;" style = "text-align: center;">
             I am interested in any volunteer / job opportunities related to computer science. 
         </p>
     </div>
@@ -43,29 +43,11 @@
 <div class = "yellowslope"></div>
 <div class = "ybg" style = "height: 175vh;">
 
-<p class = "socialstext text" style = "position: relative; left: 30vw; margin-top: 0;"> I can be found on</p>
-
-<div class="social-media">
-    <a href="https://www.linkedin.com/in/michael-markus-37b005275/">
-      <button class="boxq">
-        <img src="icons/iconmonstr-linkedin-1.svg" alt="LinkedIn">
-      </button>
-    </a>
-    <a href="https://twitter.com/michaelmar27131">
-      <button class="boxq">
-        <img src="icons/Twitter_bird_logo_2012.svg" class="twittersvg" alt="Twitter">
-      </button>
-    </a>
-    <a href="https://www.instagram.com/michaelbrianmarkus">
-      <button class="boxq">
-        <img src="icons/Instagram_logo_2016.svg" alt="Instagram">
-      </button>
-    </a>
- </div>
 
 
+ <p class = "messagea text" style = "margin-top: 0vw;font-size: 4vw; text-align: center; white-space: nowrap; position: relative; top: 10vw; ">Send me a message!</p>
 
- <form id="contactForm" action="https://formsubmit.co/michael.markus@student.cart.org" method="POST"">
+ <form id="contactForm" action="https://formsubmit.co/michael.markus@student.cart.org" method="POST" style = "s">
     <!-- HoneyPot -->
 
     <input type="hidden" name="_next" value = "https://michaelmarkus.netlify.app/contact.html">
@@ -95,7 +77,7 @@
         <textarea id="typeMessage" name="message" rows="14" cols="10" wrap="soft" required=""> </textarea>
     </div>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" class = >
 </form>
 
 </div>
@@ -135,83 +117,93 @@
 
     <style>
 
-section>div>div{
-            margin-top: 8em;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-        }
-        section>div>div>a{
-            width: 10%;
-        }
-        section>div>div>a>img{
-            width: 100%;
-            filter: invert(1);
-            
-        }
-        form>div{
-            display: flex;
-            flex-direction: column;
-            
-        }
-        form>div>input{
-            background-color: #474652;
-            color: white;
-            border: none;
-            height: 2em;
-            border-radius: 2em;
-            padding: .5em;
-        }
-        form>div>label{
-            color: white;
-            font-family: 'Jura', sans-serif;
-            margin-top: 1em;
-            margin-left: 1em;
-        }
-        form{
-            display: flex;
-            flex-wrap: wrap;
-            position: relative;
-            top: 25vh;
-            transform: scale(.75);
-            
-        }
-        #typeMessage{
-            background-color: #474652;
-            border: none;
-            color: white;font-family: 'Jura', sans-serif;
-            font-size: 1em;
-            border-radius: 2em;
-            padding: 1em;
-        }
-
-        form>input{
-            background-color: #474652;
-            color: white;
-            font-family: 'Jura', sans-serif;
-            font-size: 1.2em;
-            width: 20%;
-            height: 2.5em;f
-            border-radius: 2em;
-            margin-top: 2em;
-            margin-left: auto;
-            margin-right: auto;
-
-        }
-        form>input:hover{
-            background-color: #474652;
-            cursor:pointer;
-        }
-
-        
-        form>input:hover{
-    transform: scale(1.1);
-    transition: ease .2s;
-    background-color: white;
-    color:black
+section > div > div {
+  margin-top: 8em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
- form>input p:hover{
-    color:black
+section > div > div > a {
+  width: 10%;
+}
+
+section > div > div > a > img {
+  width: 100%;
+  filter: invert(1);
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 10vw;
+  right: 2.5vw;
+}
+
+form > div > input {
+  background-color: #474652;
+  color: white;
+  border: none;
+  border-radius: 2em;
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+}
+
+form > div > label {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  margin-top: 1em;
+  margin-left: 1em;
+  font-size: 2vw;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 25vh;
+  transform: scale(0.75);
+}
+
+#typeMessage {
+  background-color: #474652;
+  border: none;
+  color: white;
+  font-family: 'Jura', sans-serif;
+  font-size: 1em;
+  border-radius: 1em;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+form > input[type="submit"] {
+  background-color: #474652;
+  color: white;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.2em;
+  width: 20%;
+  height: 2.5em;
+  border-radius: 2em;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+form > input[type="submit"]:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: black;
+}
+
+form > input[type="submit"]:focus {
+  outline: none;
+}
+
+form > input[type="submit"] p:hover {
+  color: black;
 }
     </style>
