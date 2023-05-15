@@ -142,6 +142,7 @@ body .grayslope{
 body .formstyle{
     position: relative;
     top: 30vh;
+    width: 50%;
 }
 
 body .contactcolumn{
@@ -150,7 +151,7 @@ body .contactcolumn{
 }
 
 body button{
-    width: 115%;
+    width: 111%;
 }
 
 body .mobile{
