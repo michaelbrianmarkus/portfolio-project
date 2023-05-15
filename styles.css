@@ -53,6 +53,7 @@ body .helloimage img{
     transform: scale(1.5);
     margin-left: 5vw;
 }
+
 body .wordone{
     margin-left: 0vw;
 }
@@ -136,6 +137,28 @@ body .yellowslope{
 
 body .grayslope{
     height: 50px;
+}
+
+body .formstyle{
+    position: relative;
+    top: 30vh;
+}
+
+body .contactcolumn{
+    margin-top: 0px;
+
+}
+
+body button{
+    width: 115%;
+}
+
+body .mobile{
+    height: 110vh;
+}
+
+body .messagea{
+    margin-bottom: -20vh;
 }
 
 }
@@ -1310,4 +1333,8 @@ position: absolute;
     top: 50vh;
     transform: translateY(-50%);
     z-index: 9999;
+  }
+
+  .desktop{
+    height: 90vh;
   }
