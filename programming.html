@@ -59,25 +59,38 @@
     <div class = "fullcard">
         <div class = "cardimageone"></div>
         <div class = "carddescription">A digital rendition of the Sorry Board Game, created with only HTML, CSS and JavaScript...</div>
-        <button class = "cardbutton">Take Me</button>
+
+            <button class = "cardbutton">      
+                <a href = "sorry.html" style = >
+                Take Me      
+                </a>
+            </button>
     </div>
 
     <div class = "fullcard">
         <div class = "cardimagetwo"></div>
         <div class = "carddescription">A website to submit into the "National Injury Prevention Day Contest..."</div>
-        <button class = "cardbutton">Take Me</button>
+        <button class = "cardbutton">      
+            <a href = "nipd.html" style = >
+            Take Me      
+            </a>
+        </button>
     </div>
 
     <div class = "fullcard">
         <div class = "cardimagethree"></div>
         <div class = "carddescription">A website to raise awareness on phishing scams...</div>
-        <button class = "cardbutton">Take Me</button>
+        <button class = "cardbutton"> <a href = "phishing.html" style = >
+            Take Me      
+            </a></button>
     </div>
 
     <div class = "fullcard">
         <div class = "cardimagefour"></div>
         <div class = "carddescription">A digital rendition of the Sorry Board Game, created with only HTML, CSS and JavaScript</div>
-        <button class = "cardbutton">Take Me</div>
+        <button class = "cardbutton"> <a href = "tycoon.html" style = >
+            Take Me      
+            </a></div>
     </div>
 
 
@@ -92,36 +105,44 @@
 
 
 
-
-    <div class = "footer">  
-        <div class = "socialslist">
-            <a href="https://www.instagram.com/michaelbrianmarkus">
-            <img src = "icons/Instagram_logo_2016.svg">
-            </a>
-        
-            <a href="https://twitter.com/michaelmar27131">
+<div class="footer">
+    <div class="socialslist">
+        <a href="https://www.instagram.com/michaelbrianmarkus">
+            <img src="icons/Instagram_logo_2016.svg">
+        </a>
+        <a href="https://twitter.com/michaelmar27131">
             <img src="icons/Twitter_bird_logo_2012.svg">
-            </a> 
-        
-            <a href="https://www.linkedin.com/in/michael-markus-37b005275/">
-            <img src = "icons/iconmonstr-linkedin-1.svg">
-            </a>
+        </a>
+        <a href="https://www.linkedin.com/in/michael-markus-37b005275/">
+            <img src="icons/iconmonstr-linkedin-1.svg">
+        </a>
+    </div>
+    <div class="columnqq">
+        <div class="horizontallinks">
+            <ul class="footerlist">
+                <a href="index.html" class="footerlink">
+                    <li>Homepage</li>
+                </a>
+                <a href="portfolio-main.html" class="footerlink">
+                    <li>Portfolio</li>
+                </a>
+                <a href="aboutme.html" class="footerlink">
+                    <li>About Me</li>
+                </a>
+                <a href="contact.html" class="footerlink">
+                    <li>Contact</li>
+                </a>
+                <a href="resume.html" class="footerlink">
+                    <li>Resume</li>
+                </a>
+            </ul>
         </div>
-        
-        <div class = "columnqq">
-        <div class = "horizontallinks">
-        <ul class = "footerlist">
-            <a href = "index.html" class = "footerlink"><li>Homepage</li></a>
-            <a href = "portfolio-main.html"  class = "footerlink"><li>Portfolio</li>
-                <a href = "aboutme.html"  class = "footerlink"><li>About Me</li>
-                    <a href = "contact.html"  class = "footerlink"><li>Contact</li>
-                        <a href = "resume.html"  class = "footerlink"><li>Resume</li>
-        </ul>
-        </div>
-        <div class = "michaelcopyright">
+        <div class="michaelcopyright">
             ©2023 Michael Markus | All Rights Reserved
         </div>
-        </div>
+    </div>
+</div>
+
 <style>
 
 
@@ -137,13 +158,18 @@
 
 
 .fullcard{
+    transform: scale(2);
+    transition: none;
     border-radius: 10px;
     background-color: #3F3E46;
     height: 30vh;
     width: 17.5vw;
     display: flex;
     flex-direction: column;
-    border: solid 2px black;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .cardimageone{
@@ -229,6 +255,8 @@
     background-color: white;
     color:black
 }
+
+.fllcard:hover . f
 </style>
 
 

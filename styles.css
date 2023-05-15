@@ -1,21 +1,32 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) { 
+
     body{
         overflow-x: hidden;
-  }
 
+  }
+  
+  body  .social-media button{
+    background-color: transparent;
+  }
+ 
+  body .hello-text{
+    font-size: .9em;
+  }
+  
+  body .about-text{
+    font-size: .9em;
+
+  }
 
   body .pbg{
     height: 100vw;
   }
 
-  body .tv-container{
-    transform: scale(.6);
-}
+  body .sendme {
+    position: relative;
+    bottom: 50vh;
+  }
 
-body .wrap{
-    display: flex;
-    flex-direction: column;
-}
 
   body .threewords{
     margin-bottom: 0px;
@@ -25,7 +36,20 @@ body .wrap{
 
 body .wordone{
     margin-left: 0vw;
+}
 
+body .wrap{
+ transform: scale(.5);
+
+}
+
+body .portfoliotitle{
+    font-size: 10vw;
+}
+
+body .tv-container{
+    position: relative;
+    right: 50vw;
 }
 
 body .wordtwo{
@@ -60,20 +84,42 @@ body .ybg{
 }
 
 body .footer{
-    height: 30vh;
+    height: 20vh;
 }
 
-body .footer .footerlist{
-    font-size: 2vw;
-;
+body .footer .horizontallinks .footerlist{
+    font-size: 1em;
+    width: 100%;
+    font-weight: 800;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 30vw;
 
 }
 
+body .footer .socialslist{
+    width: 50vw;
+    position: relative;
+    right: 17.5vw;
+    justify-content: space-between;
+}
 
+body .pinkslope{
+    height: 50px;
+}
+
+body .yellowslope{
+    height: 50px;
 }
 
 
+body .grayslope{
+    height: 50px;
+}
 
+}
 body{
 max-width: 100%;
 overflow-x: hidden;
@@ -721,9 +767,7 @@ transform: scale(1.1);
 }
 
 .tvscreen{
-    -webkit-box-shadow:0px 0px 111px 31px rgba(169,186,181,0.28);
--moz-box-shadow: 0px 0px 111px 31px rgba(169,186,181,0.28);
-box-shadow: 0px 0px 111px 31px rgba(169,186,181,0.28);
+
     margin-top: 5px;
 position: absolute;
   top: 20px;
@@ -790,6 +834,7 @@ position: absolute;
   }
 
   .wrap{
+    transform: scale(1.1);
     display: flex;
     margin-right: 15vw;
     margin-left: 15vw;
@@ -959,13 +1004,25 @@ position: absolute;
 }
 
 .resumebg{
-    width: fit-content;
-    border-radius: .5vw;
-    margin-left: 10vw;
-    transform: scale(1.5);
-    transition: ease 1s;
-    position: relative;
-    top: 40vh;
+ width: 40vw;
+}
+
+.resumewrapp{
+    margin-left: 27.5vw;
+    display: flex;
+    width: 45vw;
+    border: solid black 2px;
+}
+
+.imagewrap{
+
+    width: 30vw;
+    height: 75vh;  
+    justify-content: space-between;  
+}
+
+.imagewrap img{
+    height: 25vh;
 }
 
 .resumetitle h2{
@@ -1085,3 +1142,153 @@ position: absolute;
         text-decoration: line-through black 3px
         ;
     }
+
+    .portfoliodisplay img{
+        margin-top: 5vh;
+        max-width: 85vw;
+        margin-left: 15vw;
+    }
+
+    .sorry-text{
+        text-align: center;
+        margin-left: 15vw;
+        margin-right: 10vw;
+        font-size: 2vw;
+        font-weight: 600;
+        position: relative;
+        right: 1.5vw
+    }
+    
+    .sorry-title{
+        text-align: center;
+        position: relative;
+        right: 5vw
+    }
+
+    .sorry-reflection-title{
+        text-align: center;
+        position: relative;
+        right: 5vw
+
+    }
+
+    .sorry-reflection{
+        text-align: center;
+        margin-left: 15vw;
+        margin-right: 10vw;
+        font-size: 2vw;
+        font-weight: 600;
+        width: 75vw;
+        position: relative;
+        right: 3vw
+    }
+
+    .demobox{
+        transform: scale(.9);
+        margin-left: 5vw;
+        width: 85vw;
+        height: 50vw;
+        margin-top: 5vh;
+        max-width: 85vw;
+    }
+
+    .nipd-title{
+        text-align: center;
+        position: relative;
+        right: 5vw;
+        font-size: 3vw;
+    }
+    
+    .nipd-text{
+        text-align: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-size: 2vw;
+        font-weight: 600;
+        position: relative;
+        right: 1.5vw;
+        width: 85vw;
+   }
+
+   .nipd-reflection-title{
+    text-align: center;
+    position: relative;
+    right: 5vw;
+    font-size: 3vw;
+   }
+   
+   
+   .nipd-reflection
+   {
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 2vw;
+    font-weight: 600;
+    position: relative;
+    right: 1.5vw;
+    width: 85vw;
+   }
+
+   .phishing-title{
+    text-align: center;
+    position: relative;
+    right: 5vw;
+    font-size: 3vw;
+   }
+
+   .phishing-text{
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 2vw;
+    font-weight: 600;
+    position: relative;
+    right: 1.5vw;
+    width: 85vw;
+   }
+
+   .phishing-reflection-title{
+    text-align: center;
+    position: relative;
+    right: 0vw;
+    font-size: 3vw;
+   }
+
+   .phishing-reflection{
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 2vw;
+    font-weight: 600;
+    position: relative;
+    right: 1.5vw;
+    width: 85vw;
+   }
+
+.back {
+    position: fixed;
+    left: 20px;
+    top: 50vh;
+    transform: translateY(-50%);
+    margin-right: 10px;
+    z-index: 9999;
+  }
+
+  .back img{
+    transform: scale(2);
+  }
+
+  .forward img{
+    transform: scale(2);
+  }
+  
+  .forward {
+    transform: scale(2);
+
+    position: fixed;
+    right: 20px;
+    top: 50vh;
+    transform: translateY(-50%);
+    z-index: 9999;
+  }
