@@ -1022,16 +1022,28 @@ position: absolute;
   .portfoliocolumn{
     display: flex;
     justify-content: space-between;
+    
+  }
+
+  .writingbox{
+    height: 30vh;
+    width: 30vw;
+  }
+
+  .writingbox img{
+    height: 30vh;
+    width: 30vw;
+    border-radius: 1.5vw;
   }
 
   .programmingimage img{
-    height: 70vh;
+    height: 30vh;
     width: 30vw;
     border-radius: 1.5vw;
 }
 
     .writingimage img{
-        height: 70vh;
+        height: 30vh;
         width: 30vw;
         border-radius: 1.5vw;
     }
