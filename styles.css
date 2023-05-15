@@ -34,6 +34,25 @@
     margin-left: 15vw;
 }
 
+body .hello-textimagewrap{
+    display: flex;
+    flex-direction: column;
+    margin-left: 27.5vw;
+    margin-bottom: 5vh;
+}
+
+body .hello-text{
+    margin-bottom: 10vh;
+
+    width: 70vw;
+    position: relative;
+    right: 25vw;
+}
+
+body .helloimage img{
+    transform: scale(1.5);
+    margin-left: 5vw;
+}
 body .wordone{
     margin-left: 0vw;
 }
