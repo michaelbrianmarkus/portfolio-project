@@ -1027,24 +1027,24 @@ position: absolute;
 
   .writingbox{
     height: 30vh;
-    width: 30vw;
+    width: 50vw;
   }
 
   .writingbox img{
-    height: 30vh;
-    width: 30vw;
+    height: 70vh;
+    width: 50vw;
     border-radius: 1.5vw;
   }
 
   .programmingimage img{
-    height: 30vh;
-    width: 30vw;
+    height: 70vh;
+    width: 50vw;
     border-radius: 1.5vw;
 }
 
     .writingimage img{
-        height: 30vh;
-        width: 30vw;
+        height: 70vh;
+        width: 50vw;
         border-radius: 1.5vw;
     }
 
