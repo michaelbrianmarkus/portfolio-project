@@ -1,17 +1,16 @@
 <!DOCTYPE html> <html lang="en"> <head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>&lt;writing&gt;</title> <link rel = "stylesheet" href = "styles.css"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></head>
-
-<div class = "multilayered-bg">
-
+<header>
     <nav>
         <ul class = "navbar-links">
             <div class = "homebutton">
-                <li class="home"><span class="yellowtext">michael</span><span class="redtext">markus</span></li>
+                <a href = "index.html"><li class="home"><span class="yellowtext">michael</span><span class="redtext">markus</span></li></a>
             </div>
         <a href = "portfolio-main.html"><li class = "portfolio redtext">portfolio</a>
         <ul>
-            <li class = "psubl redtext" ><a href="programming.html">programming</a></li>
+        <li class = "psubl redtext" ><a href="programming.html">programming</a></li>
             <li class = "redtext psubl"><a href="writing.html">writing</a></li>
-            <li class = "redtext psubl"><a href="other.html">other</a></li>                
+            <li class = "redtext psubl"><a href="other.html">other</a></li>        
+                      
             </ul>
         </li>
         <a href = "aboutme.html"><li class = "aboutme yellowtext">aboutme</a>
@@ -27,15 +26,61 @@
         </li>
     </ul>
 </nav>
+</header>
 
     <div class = "nametitle">
         <span class="yellowtext">writing</span>
     </div>
-    
-    <div class = "autoswipe"></div>
+   
+<div class = "pinkslope"></div>
+<div class = "pbg">
 
-    <div class = "sorryandnipd">
-        <a href = "careerresearchessay.html">Career Research Essay<div class = "researchbox"></div></a>
-        <a href = "softwareengineeringessay.html">Software Engineering Essay<div class = "softwareengineeringbox"></div></a>
+    <div class = "essays">
+        <a href = "careerresearchessay.html"><p class = "piece">Career Research Essay</p><div class = "researchbox">
+            <img src = "images/careerofchoiceimage.PNG">
+        </div></a>
+        <a href = "softwareengineeringessay.html"><p class = "piece">Software Engineering Essay</p><div class = "softwareengineeringbox">
+            <img src = "images/fullstack.PNG">
+
+        </div></a>
     </div>
     
+ <style>
+.essays{
+    position: relative;
+    top: 10vh;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+
+
+.researchbox img{
+    width: 30vw;
+    filter: blur(2px);
+
+}
+
+.researchbox img:hover{
+    transform: scale(1.1);
+    filter: none;
+    transition: ease .2s;
+}
+.softwareengineeringbox img{
+    width: 30vw;
+    filter: blur(2px);
+}
+
+.softwareengineeringbox img:hover{
+    transform: scale(1.1);
+    filter: none;
+    transition: ease .2s;
+}
+
+.piece{
+    font-size: 2vw;
+    color: white;
+}
+</style>
