@@ -1,4 +1,5 @@
-<!DOCTYPE html> <html lang="en"> <head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>&lt;contact&gt;</title> <link rel = "stylesheet" href = "styles.css"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></head>
+<!DOCTYPE html> <html lang="en"> <head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>&lt;contact&gt;</title> <link rel = "stylesheet" href = "styles.css"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> <script src="https://kit.fontawesome.com/d8a4e93e07.js" crossorigin="anonymous"></script>
+</head>
 <nav>
     <ul class = "navbar-links">
         <div class = "homebutton">
@@ -47,15 +48,15 @@
 
  <p class = "messagea text" style = "margin-top: 0vw;font-size: 4vw; text-align: center; white-space: nowrap; position: relative; top: 10vw; ">Send me a message!</p>
 
- <form id="contactForm" action="https://formsubmit.co/michael.markus@student.cart.org" method="POST" style = "s">
+ <!-- <form id="contactForm" action="https://formsubmit.co/michael.markus@student.cart.org" method="POST" style = "s">
     <!-- HoneyPot -->
 
-    <input type="hidden" name="_next" value = "https://michaelmarkus.netlify.app/contact.html">
+ <!--   <input type="hidden" name="_next" value = "https://michaelmarkus.netlify.app/contact.html">
 
     <input type="text" name="_honey" style="display: none;">
 
     <!-- Disable Captcha -->
-    <input type="hidden" name="_captcha" value="false">
+ <!--   <input type="hidden" name="_captcha" value="false">
     
 
     <input type="hidden" name="_next" onclick >
@@ -79,6 +80,29 @@
 
     <input type="submit" value="Submit" class = >
 </form>
+
+-->
+
+
+<div class = "hero">
+
+<form action="https://formsubmit.co/michael.markus@student.cart.org" method="POST">
+  <input type="hidden" name="_next" value = "https://michaelmarkus.netlify.app/thanks.html">
+  <div class="input-group">
+   <input type="text" id="name" required> 
+   <label for="name"><i class="fa-solid fa-user"></i>Your Name</label>
+  </div>
+
+  <div class="input-group">
+    <input type="text" id="email" required> 
+    <label for="email"><i class="fa-solid fa-envelope"></i>Email</label>
+  </div>
+  <div class="input-group">
+    <textarea id="message" rows="8" required></textarea>
+  <label for="message"><i class="fa-regular fa-message"></i>Your Message</label> </div>
+    <button type="submit"><i class="fa-solid fa-paper-plane"></i>SUBMIT</button>
+  </form>
+</div>
 
 </div>
 </div>
@@ -116,94 +140,69 @@
     
 
     <style>
+      form{
+        transform: scale(1.5);
+        width: 90vw;
+        max-width: 600px;
+      }
 
-section > div > div {
-  margin-top: 8em;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
+      .input-group{
+        margin-bottom: 30px;
+        position: relative;
+      }
 
-section > div > div > a {
-  width: 10%;
-}
+      input, textarea{
+        width: 100%;
+        padding: 10px;
+        outline: 0;
+        border: 3px solid black;
+        border-radius: 5px;
+        color: black;
+        background: transparent;
+        font-size: 15px;
+      }
 
-section > div > div > a > img {
-  width: 100%;
-  filter: invert(1);
-}
+      .hero{
+      width: 100%;
+      height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-form > div {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  bottom: 10vw;
-  right: 2.5vw;
-}
+      label{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 10px;
+        color: black;
+        cursor: text;
+        transition: 0.2s;
+      }
 
-form > div > input {
-  background-color: #474652;
-  color: white;
-  border: none;
-  border-radius: 2em;
-  font-size: 1.5rem;
-  padding: 0.5em 1em;
-  margin-top: 0.5em;
-}
+      button{
+        padding: 10px 0;
+        color: black;
+        outline: none;
+        background: transparent;
+        border: 3px solid black;
+        width: 104%;
+        cursor: pointer;
+      }
 
-form > div > label {
-  color: white;
-  font-family: 'Inter', sans-serif;
-  margin-top: 1em;
-  margin-left: 1em;
-  font-size: 2vw;
-}
+      input:focus~label,
+      input:valid~label,
+      textarea:focus~label,
+      textarea:valid~label
+      {
+        top: -35px;
+        font-size: 14px;
+      }
 
-form {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: 25vh;
-  transform: scale(0.75);
-}
-
-#typeMessage {
-  background-color: #474652;
-  border: none;
-  color: white;
-  font-family: 'Jura', sans-serif;
-  font-size: 1em;
-  border-radius: 1em;
-  padding: 1em;
-  margin-top: 1em;
-}
-
-form > input[type="submit"] {
-  background-color: #474652;
-  color: white;
-  font-family: 'Jura', sans-serif;
-  font-size: 1.2em;
-  width: 20%;
-  height: 2.5em;
-  border-radius: 2em;
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-  transition: ease 0.2s;
-}
-
-form > input[type="submit"]:hover {
-  transform: scale(1.1);
-  background-color: white;
-  color: black;
-}
-
-form > input[type="submit"]:focus {
-  outline: none;
-}
-
-form > input[type="submit"] p:hover {
-  color: black;
-}
+   
+      .fa-solid{
+        margin-right: 10px;
+      }
     </style>
