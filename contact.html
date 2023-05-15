@@ -86,19 +86,21 @@
 
 <div class = "hero">
 
-<form action="https://formsubmit.co/michael.brian.markus@gmail.com" method="POST">
-  <input type="hidden" name="_next" value = "https://michaelmarkus.netlify.app/thanks.html">
+<form action="https://api.web3forms.com/submit" method="POST" id="form">
+  <input type="hidden" name="access_key" value="b3c5fbcd-f4cf-4e58-b90c-54404a26d29c"/>
+  <input type="hidden" name="apikey" value="b3c5fbcd-f4cf-4e58-b90c-54404a26d29c">
+
   <div class="input-group">
-   <input type="text" id="name" required> 
+   <input type="text" id="name"  name="text"required> 
    <label for="name"><i class="fa-solid fa-user"></i>Your Name</label>
   </div>
 
   <div class="input-group">
-    <input type="text" id="email" required> 
+    <input type="text" id="email" name="text" required> 
     <label for="email"><i class="fa-solid fa-envelope"></i>Email</label>
   </div>
   <div class="input-group">
-    <textarea id="message" rows="8" required></textarea>
+    <textarea id="message" rows="8" name="text" required></textarea>
   <label for="message"><i class="fa-regular fa-message"></i>Your Message</label> </div>
     <button type="submit"><i class="fa-solid fa-paper-plane"></i>SUBMIT</button>
   </form>
