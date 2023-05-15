@@ -251,6 +251,20 @@ nav  ul ul a {
     animation-timing-function: ease-in-out;
     margin-left: 30px;
     margin-top: 5px;
+}
+
+.newtitle{
+    text-align: center;
+    margin-top: 2.5vh;
+    font-size: 6vw;
+    font-weight: 500;
+
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;   
 
 }
 
@@ -893,8 +907,8 @@ position: absolute;
   
   .dot {
     border-radius: 50px;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     margin: 0 10px;
     background-color: #bbb;
     cursor: pointer;
