@@ -995,42 +995,6 @@ position: absolute;
     height: 30vh;
     margin-bottom: 5vw;}
 
-
-.submitbutton{
-    background-color: #3F3E46;
-    width: 25vw;
-    height: 5vw;
-    margin-left: 13vw;
-    border-radius: 2vw;
-    display: flex;
-}
-
-.submitbutton:hover{
-    transform: scale(1.1);
-    transition: ease .2s;
-    background-color: white;
-}
-
-.submitbutton p:hover{
-    color:black
-}
-
-.submitbutton p{
-    height: 100%;
-    align-self: center;
-    color:white;
-    text-align: center;
-    font-size: 2vw;
-    cursor: pointer;
-    font-weight: 600;
-    width: 100%;
-    position: relative;
-    top: 25%;
-    
-    
-
-}
-
       .animation {
         opacity: 0; /* initially hidden */
         transform: translateY(50px); /* initially translated down */

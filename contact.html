@@ -26,63 +26,28 @@
 </ul>
 </nav>
 
-<div class = "nametitle">
-    <span class="yellowtext">contact</span>
-</div>
+<div class = "nametitle"><span class="yellowtext">contact</span></div>
 
 <div class = "pinkslope" style = "margin-bottom: 0vw;"></div>
-<div class = "pbg" >
-    <div class = "contact-text text" style = "margin-top: vw;">
-        <p class = "top" style = "margin-top: 0vw;" >
+<div class = "pbg" style = "height: 80vh;"  >
+    <div class = "contact-text text" style = "margin-top: 0vw;">
+        <p class = "top" style = "margin-top: 0vw;position: relative; top: 5vw; margin-bottom: 10vw; text-align: center; width: 82.5vw;"  >
             Thank you for viewing my portfolio.
         </p>
-        <p class = "bottom text" style = "position: relative; right: 10vw;" style = "text-align: center;">
+        <p class = "bottom text" style = "text-align: center; width: 82.5vw; position: relative; right: 10vw;" style = "text-align: center;">
             I am interested in any volunteer / job opportunities related to computer science. 
         </p>
     </div>
 
 <div class = "yellowslope"></div>
-<div class = "ybg" style = "height: 175vh;">
+<div class = "ybg" style = "height: 90vh;">
 
 
-
- <p class = "messagea text" style = "margin-top: 0vw;font-size: 4vw; text-align: center; white-space: nowrap; position: relative; top: 10vw; ">Send me a message!</p>
-
- <!-- <form id="contactForm" action="https://formsubmit.co/michael.markus@student.cart.org" method="POST" style = "s">
-    <!-- HoneyPot -->
-
- <!--   <input type="hidden" name="_next" value = "https://michaelmarkus.netlify.app/contact.html">
-
-    <input type="text" name="_honey" style="display: none;">
-
-    <!-- Disable Captcha -->
- <!--   <input type="hidden" name="_captcha" value="false">
-    
-
-    <input type="hidden" name="_next" onclick >
-
-    <div style="width: 45%;">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="fname" required="">
-    </div>
-    <div style="width: 45%; margin-left: 10%;"> 
-        <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lname" required="">
-    </div>
-    <div style="width: 100%;">
-        <label for="contactmethod">Contact Method (Optional)</label>
-    <input type="text" id="contactmethod" name="contactmethod">
-    </div>
-    <div style="width: 100%;">
-        <label for="message">Type Message Here</label>
-        <textarea id="typeMessage" name="message" rows="14" cols="10" wrap="soft" required=""> </textarea>
-    </div>
-
-    <input type="submit" value="Submit" class = >
-</form>
-
--->
-
+<div class = "contactcolumn">
+  
+  <div class = "containerr">
+ <p class = "messagea text" style = "font-size: 4vw; white-space: nowrap;">Send me a message!</p>
+</div>
 
 <div class = "hero">
 
@@ -108,6 +73,10 @@
 
 </div>
 </div>
+</div>
+</div>
+</div>
+
 
 <div class = "footer" style = "position: relative; top:  50vh;">  
     <div class = "socialslist">
@@ -144,16 +113,20 @@
     <style>
       form{
         transform: scale(1.5);
-        width: 90vw;
-        max-width: 600px;
+        width: 31.25vw;
+        position: relative;
+        top: 30vh;
+    
       }
 
       .input-group{
         margin-bottom: 30px;
         position: relative;
+        
       }
 
       input, textarea{
+        background-color: white;
         width: 100%;
         padding: 10px;
         outline: 0;
@@ -182,9 +155,11 @@
         color: black;
         cursor: text;
         transition: 0.2s;
+        
       }
 
       button{
+        
         padding: 10px 0;
         color: black;
         outline: none;
@@ -192,6 +167,11 @@
         border: 3px solid black;
         width: 104%;
         cursor: pointer;
+      }
+
+      button:hover{
+    transition: ease .2s;
+    background-color: white;
       }
 
       input:focus~label,
@@ -207,4 +187,19 @@
       .fa-solid{
         margin-right: 10px;
       }
+
+      .fa-regular{
+        margin-right: 10px;
+      }
+      
+      .contactcolumn{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+      }
+
+      .messagea{
+       position: absolute;
+       left: 20vw;
+        }
     </style>
