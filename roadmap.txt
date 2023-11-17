@@ -1,0 +1,6 @@
+ROADMAP:
+
+
+Fix Mobile View
+Fix portfolio section
+Revamp Resume

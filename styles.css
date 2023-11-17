@@ -11,6 +11,10 @@
   body  .social-media button{
     background-color: transparent;
   }
+
+  body .takemebutton{
+    visibility: hidden;
+  }
  
   body .hello-text{
     font-size: .9em;
@@ -25,9 +29,14 @@
     height: 100vw;
   }
 
+
   body .sendme {
     position: relative;
     bottom: 50vh;
+  }
+
+  body .containerr{
+    visibility: hidden;
   }
 
 
@@ -107,7 +116,11 @@ body .ybg{
 }
 
 body .footer{
-    height: 20vh;
+    visibility: hidden
+}
+
+body .michaelcopyright{
+    margin-bottom: 0vh;
 }
 
 body .footer .horizontallinks .footerlist{
@@ -119,14 +132,18 @@ body .footer .horizontallinks .footerlist{
     justify-content: space-between;
     position: relative;
     right: 30vw;
-
+    visibility: hidden
 }
+
+
 
 body .footer .socialslist{
     width: 50vw;
     position: relative;
     right: 17.5vw;
     justify-content: space-between;
+    visibility: hidden
+
 }
 
 body .pinkslope{
@@ -375,6 +392,7 @@ font-style: italic;
 font-weight: 100;
 margin-left: 15vw;
 margin-bottom: 5vh;
+
 }
 
 
